@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>GTA 6 - Contagem Decrescente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/decrescente.js" defer></script>
+  </head>
+  <body class="relative text-white min-h-screen overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.gtavice.net/content/images/rockstar-games-official-grand-theft-auto-vi-artwork-with-gta-logo.jpg')] bg-cover bg-center blur-sm" style="z-index: -1;"></div>
+  
+    <header class="absolute top-0 left-0 right-0 bg-black bg-opacity-60 flex items-center p-4">
+      <a href="../index.html">
+        <img src="../imagens/logotipo.png" class="h-12 mr-4" alt="Logotipo">
+      </a>
+      <h1 class="text-2xl font-bold">GTA 6 - Contagem Decrescente</h1>
+    </header>
+  
+    <main class="flex flex-col items-center justify-center min-h-screen">
+      <div class="bg-black bg-opacity-50 p-6 rounded-lg text-center">
+        <div id="contador" data-data="2026-05-26T00:00:00" class="text-4xl font-mono">
+          <div class="flex space-x-8">
+            <div class="flex flex-col items-center">
+              <span id="dias" class="text-6xl">0</span>
+              <span class="text-sm">dias</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span id="horas" class="text-6xl">0</span>
+              <span class="text-sm">horas</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span id="minutos" class="text-6xl">0</span>
+              <span class="text-sm">minutos</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span id="segundos" class="text-6xl">0</span>
+              <span class="text-sm">segundos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
